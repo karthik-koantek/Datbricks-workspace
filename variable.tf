@@ -13,5 +13,5 @@ variable "region" {
   default = "us-east-2"
 }
 variable "name" {
-  default = "arenatest"
+  default = "arena"
 }
