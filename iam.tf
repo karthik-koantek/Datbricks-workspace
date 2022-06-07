@@ -21,3 +21,9 @@ resource "databricks_mws_credentials" "this" {
   credentials_name = "${var.name}-creds"
   depends_on       = [aws_iam_role_policy.this]
 }
+
+resource "time_sleep" "wait" {
+  depends_on = [
+  aws_iam_role.cross_account_role]
+  create_duration = "20s"
+}
