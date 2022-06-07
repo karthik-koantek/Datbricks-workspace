@@ -10,8 +10,8 @@ variable "cidr_block" {
   default = "10.4.0.0/16"
 }
 variable "region" {
-  default = "us-west-2"
+  default = "us-east-1"
 }
 variable "name" {
-  default = "databricks-ar-koan"
+  default = "databricks-arn-demo"
 }
