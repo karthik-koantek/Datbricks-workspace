@@ -2,11 +2,11 @@ terraform {
   required_providers {
     databricks = {
       source  = "databrickslabs/databricks"
-      version = "0.4.7"
+     
     }
     aws = {
       source  = "hashicorp/aws"
-      version = "3.49.0"
+      version = "4.15.0"
     }
   }
 }
@@ -21,5 +21,4 @@ provider "databricks" {
   host     = "https://accounts.cloud.databricks.com"
   username = var.databricks_account_username
   password = var.databricks_account_password
-  
 }
